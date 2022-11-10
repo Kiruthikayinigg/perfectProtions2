@@ -12,7 +12,7 @@ import { HttpService } from 'src/app/services/http.service';
 export class FavoritesComponent implements OnInit {
 	@Input() favorites: FoodCode[] = [];
 	private debounce: boolean = false;
-
+	
 	constructor(
 		private modal: ModalController,
 		private favoritesService: FavoritesService,
